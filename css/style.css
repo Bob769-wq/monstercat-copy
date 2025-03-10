@@ -259,6 +259,12 @@ table a {
   margin-top: 2rem;
 }
 
+.service input {
+  background-color: transparent;
+
+  font-size: 18px;
+}
+
 .copyright {
   display: flex;
   justify-content: space-between;
