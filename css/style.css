@@ -13,21 +13,62 @@ a {
 body {
   background-color: #000;
   color: #f1f1f1;
-  position: relative;
+
 }
 
+.background-poster {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.banner {
+  background-image: url(/image/background-image.webp);
+  background-color: #000;
+  filter: blur(5px) brightness(38%);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 .head-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
+  position: relative;
+}
+
+.head-bar ul {
+  position: absolute;
+  top: 100px;
+  right: 1rem;
+  width: 50px;
+  text-align: center;
+}
+
+.head-bar li {
+  margin: 2rem 0;
 }
 
 .wrapper {
   padding: 0 1rem;
   margin: auto;
-  background-color: blue;
 }
 
 @media (min-width:1920px) {
@@ -51,6 +92,7 @@ body {
 .image-title {
   display: flex;
   align-items: center;
+  gap: 5rem;
 }
 
 @media (min-width: 1440px) {
@@ -99,12 +141,56 @@ h2 {
 .stream-online {
   display: flex;
   align-items: center;
+  font-size: 22px;
+}
+
+
+
+.stream-mark a {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+
+table {
+  width: 100%;
+}
+
+table a {
+  text-decoration: none;
+  border: none;
+}
+
+#track-1,
+#track-2,
+#track-3,
+#track-4,
+#track-5,
+#track-6,
+#track-7,
+#track-8,
+#track-9,
+#track-10,
+#track-11,
+#track-12 {
+  font-size: 18px;
+}
+
+.list-number {
+  padding: 16px 8px;
 }
 
 
 .column-main {
   display: flex;
   align-items: center;
+  padding: 1rem .5rem;
+}
+
+.column-main a {
+  text-decoration: none;
+  border: none;
+  margin-right: 1rem;
 }
 
 .song-artist {
@@ -119,22 +205,44 @@ h2 {
   height: 100%;
 }
 
+
+
+
 .service {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  font-size: 18px;
+  line-height: 1.75;
+  margin-top: 2rem;
 }
 
 .copyright {
   display: flex;
   justify-content: space-between;
+  font-style: italic;
+  letter-spacing: .1em;
+  margin-top: 1rem 0;
+}
+
+.copyright a {
+  border: none;
+  letter-spacing: 1rem;
 }
 
 .sns-link ul {
   display: flex;
 }
 
-.warning {
+.warning-1 {
   width: 60%;
   margin: auto;
   text-align: center;
+  padding-top: 4rem;
+}
+
+.warning-2 {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding-top: 1rem;
 }
