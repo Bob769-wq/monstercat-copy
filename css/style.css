@@ -8,6 +8,7 @@
 a {
   color: white;
   border: solid 1px;
+  text-decoration: none;
 }
 
 body {
@@ -66,6 +67,48 @@ header {
   margin: 2rem 0;
 }
 
+.right-section button {
+  color: #f1f1f1;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+nav {
+  position: absolute;
+  height: 100vh;
+  width: 420px;
+  max-width: 100%;
+  background-color: darkgray;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.scroller {
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+.bottom li {
+  display: inline;
+}
+
+.nav-bottom-bottom {
+  display: flex;
+  align-items: center;
+}
+
 .wrapper {
   padding: 0 1rem;
   margin: auto;
@@ -110,7 +153,7 @@ header {
   display: flex;
 }
 
-button {
+.listen-now {
   display: flex;
   align-items: center;
   padding: 1.6rem 1.8rem;
