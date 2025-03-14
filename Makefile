@@ -260,3 +260,6 @@ check-commit:
 	else \
 		echo "✅ Working directory is clean."; \
 	fi
+
+test-echo:
+	echo "test123"
